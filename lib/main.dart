@@ -127,13 +127,10 @@ class _HomePageState extends State<HomePage> {
                     title: "Initial Amount Taken",
                     hintText: "eg. 40000",
                     controller: _initialAmountController),
-                Padding(
-                  padding: const EdgeInsets.only(top: 16),
-                  child: Text(
-                    "Amount Owed",
-                    style: TextStyle(fontSize: 16),
-                  ),
-                ),
+                inputForm(
+                    title: "Down Payment",
+                    hintText: "eg. 4000",
+                    controller: _downPaymentController),
                 inputForm(
                     title: "Interest Rate",
                     hintText: "eg. 3.5",
